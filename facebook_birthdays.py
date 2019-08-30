@@ -20,7 +20,7 @@ epochs = ['1546300800', '1548979200', '1551398400', '1554076800', '1556668800', 
 # Do the same thing for the "path" value in the headers JSON
 
 for epoch in epochs:
-    res = requests.get(YOUR_HEADER_HERE.format(epoch),
+    res = requests.get(YOUR_URL_HERE.format(epoch),
                    headers = {"authority": "www.facebook.com",
                                 "path": YOUR_PATH_HERE.format(epoch),
                                 "scheme": "",
